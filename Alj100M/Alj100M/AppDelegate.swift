@@ -8,6 +8,8 @@
 
 import UIKit
 
+var CountTimer : Float = 0.0
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

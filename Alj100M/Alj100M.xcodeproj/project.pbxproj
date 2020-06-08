@@ -13,6 +13,9 @@
 		EBF3A969248DF76B006A88D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBF3A967248DF76B006A88D2 /* Main.storyboard */; };
 		EBF3A96B248DF773006A88D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF3A96A248DF773006A88D2 /* Assets.xcassets */; };
 		EBF3A96E248DF773006A88D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBF3A96C248DF773006A88D2 /* LaunchScreen.storyboard */; };
+		EBF3A976248DF814006A88D2 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF3A975248DF814006A88D2 /* GameViewController.swift */; };
+		EBF3A978248DF89B006A88D2 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF3A977248DF89B006A88D2 /* ResultViewController.swift */; };
+		EBF3A97B248E1BA6006A88D2 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF3A97A248E1BA6006A88D2 /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		EBF3A96A248DF773006A88D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBF3A96D248DF773006A88D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBF3A96F248DF773006A88D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBF3A975248DF814006A88D2 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		EBF3A977248DF89B006A88D2 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		EBF3A97A248E1BA6006A88D2 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF3A97B248E1BA6006A88D2 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,7 @@
 			children = (
 				EBF3A960248DF76B006A88D2 /* Alj100M */,
 				EBF3A95F248DF76B006A88D2 /* Products */,
+				EBF3A979248E1BA6006A88D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +68,21 @@
 				EBF3A963248DF76B006A88D2 /* SceneDelegate.swift */,
 				EBF3A965248DF76B006A88D2 /* ViewController.swift */,
 				EBF3A967248DF76B006A88D2 /* Main.storyboard */,
+				EBF3A977248DF89B006A88D2 /* ResultViewController.swift */,
 				EBF3A96A248DF773006A88D2 /* Assets.xcassets */,
 				EBF3A96C248DF773006A88D2 /* LaunchScreen.storyboard */,
 				EBF3A96F248DF773006A88D2 /* Info.plist */,
+				EBF3A975248DF814006A88D2 /* GameViewController.swift */,
 			);
 			path = Alj100M;
+			sourceTree = "<group>";
+		};
+		EBF3A979248E1BA6006A88D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBF3A97A248E1BA6006A88D2 /* Social.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF3A978248DF89B006A88D2 /* ResultViewController.swift in Sources */,
+				EBF3A976248DF814006A88D2 /* GameViewController.swift in Sources */,
 				EBF3A966248DF76B006A88D2 /* ViewController.swift in Sources */,
 				EBF3A962248DF76B006A88D2 /* AppDelegate.swift in Sources */,
 				EBF3A964248DF76B006A88D2 /* SceneDelegate.swift in Sources */,
