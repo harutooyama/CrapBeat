@@ -16,7 +16,8 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        TimerLabel.text = NSString(format:"%.2秒",CountTimer) as String
+        TimerLabel.text = NSString(format:"%.2f秒",CountTimer) as String
+  
 
         // Do any additional setup after loading the view.
     }

@@ -242,7 +242,7 @@
                                     <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="rendaButtonWithSender:" destination="55D-HT-Ena" eventType="touchUpInside" id="Ex5-sM-IwT"/>
+                                    <action selector="rendaButtonWithSender:" destination="55D-HT-Ena" eventType="touchUpInside" id="zp2-fc-48X"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEF-sP-OkH">
