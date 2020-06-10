@@ -1,9 +1,9 @@
 //
 //  SceneDelegate.swift
-//  RSSReader
+//  Pedometer
 //
 //  Created by Owner on 2020/06/09.
-//  Copyright © 2020 asOne. All rights reserved.
+//  Copyright © 2020 Owner. All rights reserved.
 //
 
 import UIKit

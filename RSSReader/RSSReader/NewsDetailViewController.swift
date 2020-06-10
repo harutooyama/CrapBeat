@@ -3,30 +3,40 @@
 //  RSSReader
 //
 //  Created by Owner on 2020/06/09.
-//  Copyright © 2020 Owner. All rights reserved.
+//  Copyright © 2020 asOne. All rights reserved.
 //
 
 import UIKit
 
-class NewsDetailViewController: UIViewController {
-    
+class NewsDetailViewController: UIViewController, UIWebViewDelegate {
+
     @IBOutlet weak var detailWebView: UIWebView!
+    
+    var urlToRSSReaderView = NSURL()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        detailWebView.delegate = self
+        makeRequest()
     }
-
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func makeRequest() {
+        let urlReq = NSURLRequest(url: urlToRSSReaderView as URL)
+        detailWebView.loadRequest(urlReq as URLRequest)
+        
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
     }
-    */
+    
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
+        print("Webロードが正常に行われました")
+    }
+    
+    func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
+        print("Web Viewロード中にエラーが生じました")
+    }
 
 }
