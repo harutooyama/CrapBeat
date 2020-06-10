@@ -16,6 +16,10 @@
 		EB349FC524906D09001DE25D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB349FC324906D09001DE25D /* LaunchScreen.storyboard */; };
 		EB349FCD24906E79001DE25D /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = EB349FCC24906E5B001DE25D /* data.db */; };
 		EB349FCF24906EFD001DE25D /* libsqlite3.dylib in Resources */ = {isa = PBXBuildFile; fileRef = EB349FCE24906EFD001DE25D /* libsqlite3.dylib */; };
+		EBCB456424907F0100DC967C /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB456324907F0100DC967C /* Shop.swift */; };
+		EBCB4570249096E300DC967C /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB456C249096E200DC967C /* SQLiteDB.swift */; };
+		EBCB4571249096E300DC967C /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB456D249096E300DC967C /* String-Extras.swift */; };
+		EBCB4572249096E300DC967C /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB456F249096E300DC967C /* SQLTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,11 @@
 		EB349FC624906D09001DE25D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB349FCC24906E5B001DE25D /* data.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.db; sourceTree = "<group>"; };
 		EB349FCE24906EFD001DE25D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsqlite3.dylib; sourceTree = "<group>"; };
+		EBCB456324907F0100DC967C /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		EBCB456C249096E200DC967C /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
+		EBCB456D249096E300DC967C /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String-Extras.swift"; path = "../../../../Downloads/SQLiteDB/String-Extras.swift"; sourceTree = "<group>"; };
+		EBCB456E249096E300DC967C /* ShopIntro-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShopIntro-Bridging-Header.h"; sourceTree = "<group>"; };
+		EBCB456F249096E300DC967C /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +95,13 @@
 			isa = PBXGroup;
 			children = (
 				EB349FCC24906E5B001DE25D /* data.db */,
+				EBCB456E249096E300DC967C /* ShopIntro-Bridging-Header.h */,
+				EBCB456C249096E200DC967C /* SQLiteDB.swift */,
+				EBCB456F249096E300DC967C /* SQLTable.swift */,
+				EBCB456D249096E300DC967C /* String-Extras.swift */,
 				EB349FB824906D01001DE25D /* AppDelegate.swift */,
 				EB349FBA24906D01001DE25D /* SceneDelegate.swift */,
+				EBCB456324907F0100DC967C /* Shop.swift */,
 				EB349FBC24906D01001DE25D /* ViewController.swift */,
 				EB349FBE24906D01001DE25D /* Main.storyboard */,
 				EB349FC124906D09001DE25D /* Assets.xcassets */,
@@ -215,8 +229,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB349FBD24906D01001DE25D /* ViewController.swift in Sources */,
+				EBCB4572249096E300DC967C /* SQLTable.swift in Sources */,
+				EBCB4571249096E300DC967C /* String-Extras.swift in Sources */,
 				EB349FB924906D01001DE25D /* AppDelegate.swift in Sources */,
+				EBCB4570249096E300DC967C /* SQLiteDB.swift in Sources */,
 				EB349FBB24906D01001DE25D /* SceneDelegate.swift in Sources */,
+				EBCB456424907F0100DC967C /* Shop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +388,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.al-j.Shopintro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Shopintro/ShopIntro-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "Shopintro/ShopIntro-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -390,6 +410,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.al-j.ShopintroOyama";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Shopintro/ShopIntro-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

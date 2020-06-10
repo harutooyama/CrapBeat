@@ -52,11 +52,12 @@
                     <navigationItem key="navigationItem" id="wGa-Ym-b5M"/>
                     <connections>
                         <outlet property="mapView" destination="59q-bw-Vey" id="Hnc-V3-7ke"/>
+                        <outlet property="tableView" destination="NoX-jq-miq" id="98R-gK-4Au"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.0289855072465" y="118.52678571428571"/>
+            <point key="canvasLocation" x="754" y="119"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Da6-Dc-ved">
@@ -74,7 +75,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ctj-kI-DwU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="61" y="133"/>
+            <point key="canvasLocation" x="68" y="119"/>
         </scene>
     </scenes>
 </document>
